@@ -203,7 +203,7 @@ See `/adf/screenshots`
 ![Data Model](docs/images/DataModel.png)
 
 
-## 🔄 Azure Data Factory Pipelines
+## Azure Data Factory Pipelines
 
 ADF is used for orchestration of ingestion and transformation workflows.
 
