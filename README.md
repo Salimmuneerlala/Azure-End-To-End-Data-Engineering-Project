@@ -10,7 +10,7 @@ This project implements a **production-style data engineering pipeline** on Azur
 
 The pipeline ingests transactional data, processes it using distributed computing, and transforms it into an **analytics-ready data warehouse** designed using a Star Schema.
 
-> ⚡ Focus: Scalability, incremental processing, and clean data modeling practices
+>  Focus: Scalability, incremental processing, and clean data modeling practices
 
 ---
 
