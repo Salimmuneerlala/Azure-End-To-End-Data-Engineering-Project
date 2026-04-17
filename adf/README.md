@@ -33,7 +33,7 @@ Connections established between ADF and external systems:
 - Azure SQL Database
 - Azure Data Lake Storage (ADLS Gen2)
 
-![Linked Services](adf/screenshots/01_linked_services.png)
+![Linked Services](screenshots/01_linked_services.png)
 
 ---
 
@@ -44,7 +44,7 @@ Defines structured data representations for source and destination systems.
 - SQL datasets for relational data
 - ADLS datasets for file storage
 
-![Datasets](adf/screenshots/02_dataset_services.png)
+![Datasets](screenshots/02_dataset_services.png)
 
 ---
 
@@ -55,7 +55,7 @@ Enables dynamic dataset usage across multiple tables.
 - Supports reusable pipeline design  
 - Eliminates hardcoding  
 
-![Parameterized Dataset](adf/screenshots/03_dataset_parameterizing_.png)
+![Parameterized Dataset](screenshots/03_dataset_parameterizing_.png)
 
 ---
 
@@ -68,12 +68,12 @@ Enables dynamic dataset usage across multiple tables.
 #### Source
 Extracts raw data from GitHub repository.
 
-![GitHub Source](adf/screenshots/04_git_to_sql_copy_act_Source.png)
+![GitHub Source](screenshots/04_git_to_sql_copy_act_Source.png)
 
 #### Sink
 Loads data into Azure SQL Database.
 
-![Azure SQL Sink](adf/screenshots/05_git_to_sql_copy_act_Sink.png)
+![Azure SQL Sink](screenshots/05_git_to_sql_copy_act_Sink.png)
 
 ---
 
@@ -83,7 +83,7 @@ Moves data from Azure SQL Database into Azure Data Lake Storage.
 
 - Forms the Bronze (raw) layer of Medallion Architecture
 
-![SQL to ADLS Pipeline](adf/screenshots/06_sql_to_adls_pipeline.png)
+![SQL to ADLS Pipeline](screenshots/06_sql_to_adls_pipeline.png)
 
 ---
 
@@ -95,7 +95,7 @@ Moves data from Azure SQL Database into Azure Data Lake Storage.
 
 Stores last successful pipeline execution timestamp.
 
-![Last Load Watermark](adf/screenshots/07_last_load_max_date.png)
+![Last Load Watermark](screenshots/07_last_load_max_date.png)
 
 ---
 
@@ -103,7 +103,7 @@ Stores last successful pipeline execution timestamp.
 
 Fetches latest available timestamp from source system.
 
-![Current Load Timestamp](adf/screenshots/08_current_load_max_date.png)
+![Current Load Timestamp](screenshots/08_current_load_max_date.png)
 
 ---
 
@@ -114,7 +114,7 @@ Implements incremental loading logic:
 - Loads only new or updated records  
 - Uses watermark-based filtering  
 
-![Incremental Copy Activity](adf/screenshots/09_copy_data_incrementally.png)
+![Incremental Copy Activity](screenshots/09_copy_data_incrementally.png)
 
 ---
 
@@ -125,7 +125,7 @@ Updates watermark after successful execution:
 - Ensures next run processes only new data  
 - Maintains pipeline state  
 
-![Update Watermark](adf/screenshots/10_update_last_load_max_date_St.png)
+![Update Watermark](screenshots/10_update_last_load_max_date_St.png)
 
 ---
 
