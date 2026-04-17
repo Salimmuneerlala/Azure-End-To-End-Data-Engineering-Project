@@ -178,7 +178,7 @@ Business teams can:
 
 ---
 
-## 📈 Why This Project Matters
+## Why This Project Matters
 
 This project demonstrates:
 
@@ -187,7 +187,31 @@ This project demonstrates:
 * End-to-end ownership of data pipelines
 
 ---
+## Project Structure
+- `adf/` → pipeline screenshots & configs
+- `databricks/` → notebooks (bronze, silver, gold)
+- `configs/` → ingestion config
+- `docs/` → architecture details
 
-## Acknowledgment
+## ADF Pipeline
+See `/adf/screenshots`
 
-This project was inspired by a YouTube tutorial and extended with additional improvements and structure to reflect production-level practices.
+## Architecture Diagram
+![Architecture](docs/images/ArchitectureDiagram.png)
+
+## Data Model (Star Schema)
+![Data Model](docs/images/DataModel.png)
+
+
+## 🔄 Azure Data Factory Pipelines
+
+ADF is used for orchestration of ingestion and transformation workflows.
+
+- Config-driven pipelines using Lookup + ForEach
+- Supports full and incremental loads
+- Modular pipeline design using Execute Pipeline
+- Integrated with Databricks for transformations
+
+See detailed pipeline flow in `adf/README.md`
+
+---
