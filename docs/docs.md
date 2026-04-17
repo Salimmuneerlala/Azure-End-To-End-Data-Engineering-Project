@@ -18,7 +18,7 @@ This architecture follows the **Medallion Architecture pattern (Bronze → Silve
 
 ### 🧠 Architecture Diagram:
 
-![Architecture Diagram](docs/images/ArchitectureDiagram.png)
+![Architecture Diagram](images/ArchitectureDiagram.png)
 
 ---
 
@@ -47,7 +47,7 @@ The final analytical layer is designed using a **Star Schema model**, optimized 
 
 ### 🧠 Data Model Diagram:
 
-![Data Model](docs/images/DataModel.png)
+![Data Model](images/DataModel.png)
 
 ---
 
