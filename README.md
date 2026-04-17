@@ -130,12 +130,12 @@ project/
 
 ## Key Features
 
-* ✅ Incremental data loading (CDC-based logic)
-* ✅ Parameterized and reusable pipelines
-* ✅ Distributed processing using PySpark
-* ✅ Star Schema for optimized querying
-* ✅ Workflow orchestration
-* ✅ Data governance with Unity Catalog
+* Incremental data loading (CDC-based logic)
+* Parameterized and reusable pipelines
+* Distributed processing using PySpark
+* Star Schema for optimized querying
+* Workflow orchestration
+* Data governance with Unity Catalog
 
 ---
 
